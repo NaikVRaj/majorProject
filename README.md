@@ -1,4 +1,4 @@
-# QuizWhiz - Online Quiz Portal
+# WorkWize - Industrial Project Management Platform
 
 ## Table of Contents
 
@@ -10,9 +10,9 @@
 
 ## Problem Statement
 
-Traditional methods of administering quizzes and exams in educational institutions lack efficiency and responsiveness, often characterized by manual processes and outdated assessment methods. Existing online quiz portals may not adequately address the needs of educational institutions, leading to challenges in exam management, assessment, and scalability. Furthermore, there is a growing demand for platforms that can accommodate user feedback and updates in a timely manner.
+In industrial settings, traditional methods of project management often lack efficiency and responsiveness, characterized by manual processes and disjointed workflows. Existing project management systems may not adequately address the needs of industrial projects, leading to challenges in project coordination, task assignment, and progress tracking. Additionally, there is a growing demand for platforms that can accommodate user feedback and updates in real-time.
 
-The project "QuizWhiz" aims to address these challenges by developing an online quiz portal tailored for educational institutions. The primary objective is to implement a typical DevOps pipeline to enhance frequent deliverables and responsiveness to user feedback. By leveraging DevOps methodologies, QuizWhiz seeks to streamline exam management processes, improve assessment methods, and ensure scalability and reliability. This initiative aims to revolutionize the assessment process in educational settings by providing a user-friendly and efficient platform for conducting quizzes and exams.
+The project "WorkWize" aims to address these challenges by developing a comprehensive project management platform tailored for industrial settings. The primary objective is to provide a streamlined and intuitive solution that enhances project workflows and facilitates effective project management by all stakeholders.
 
 ---
 
@@ -20,50 +20,46 @@ The project "QuizWhiz" aims to address these challenges by developing an online 
 
 ### Roles:
 
-1. **Student:**
-   - **Role Description:** Students are users who primarily take quizzes and view their own profiles.
+1. **Employee:**
+   - **Role Description:** Employees execute assigned tasks within projects under the guidance of managers.
    - **Functionalities:**
-     - Take Quiz:
-       - Start quiz
-       - Answer quiz questions
-       - Submit quiz
+     - Tasks Related:
+       - View Assigned Tasks
+       - Update Task Progress
+       - Visualize Personal Progress
      - View Profile:
        - View personal details
-       - View quiz history
+       - View task history
      - Reset Password:
        - Request password reset
        - Set new password
 
-2. **Faculty:**
-   - **Role Description:** Faculty members are users responsible for creating and managing quizzes, as well as viewing their own profiles.
+2. **Manager:**
+   - **Role Description:** Managers oversee projects and task assignments, ensuring smooth workflow and project progress.
    - **Functionalities:**
-     - Create Quiz:
-       - Create new quizzes
-       - Add questions to quizzes
-     - Update Quiz:
-       - Edit existing quizzes
-       - Add or remove questions from quizzes
-     - Manage Quizzes:
-       - View quizzes
-       - View quiz results
-     - View Profile:
-       - View personal details
-       - View quiz creation history
+     - Create Project:
+       - Create new projects
+       - Assign to employees
+     - Update Project:
+       - Edit existing projects
+       - Add or remove tasks, employee from projects
+     - Delete Project:
+       - Delete Project from the System
+     - Project Progress Monitoring
+     - Time Distribution Management
+     - Effort Distribution Visualization
      - Reset Password:
        - Request password reset
        - Set new password
 
 3. **Admin:**
-   - **Role Description:** Administrators have the highest level of access and are responsible for managing users, including adding and removing students and faculty, as well as overseeing the overall system administration.
+   - **Role Description:** Administrators have the highest level of access and are responsible for managing users, including adding and removing employees and managers, as well as overseeing the overall system administration.
    - **Functionalities:**
      - Manage Users:
        - Add new users
        - View user profiles
        - Edit user profiles
        - Delete user accounts
-     - Manage Quizzes:
-       - View all quizzes
-       - View all quiz results
      - System Administration:
        - Handle system configurations
        - Perform maintenance tasks
@@ -87,6 +83,7 @@ The project "QuizWhiz" aims to address these challenges by developing an online 
 - Jenkins: Automation for building, testing, and deployment
 - Docker: Containerization for application management
 - Ansible: Automation for configuration and deployment
+- ELK Stack: Log management and analysis
 
 ---
 
@@ -94,4 +91,7 @@ The project "QuizWhiz" aims to address these challenges by developing an online 
 Vraj Jatin Naik & Arjun Gangani
 MT2023050 & MT2023153
 [Vraj.Naik@iiitb.ac.in](mailto:Vraj.Naik@iiitb.ac.in) & [Arjun.Gangani@iiitb.ac.in](mailto:Arjun.Gangani@iiitb.ac.in)
+
+---
+
 
