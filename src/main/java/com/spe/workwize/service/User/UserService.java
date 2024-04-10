@@ -1,4 +1,4 @@
-package com.spe.workwize.service;
+package com.spe.workwize.service.User;
 
 
 import com.spe.workwize.customModel.UserModel;

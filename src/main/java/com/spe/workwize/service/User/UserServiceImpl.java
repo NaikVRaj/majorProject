@@ -1,10 +1,11 @@
-package com.spe.workwize.service;
+package com.spe.workwize.service.User;
 
 import com.spe.workwize.customModel.LoginUser;
 import com.spe.workwize.customModel.UserModel;
 import com.spe.workwize.models.Role;
 import com.spe.workwize.models.User;
 import com.spe.workwize.repository.UserRepository;
+import com.spe.workwize.service.Role.RoleService;
 import com.spe.workwize.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;

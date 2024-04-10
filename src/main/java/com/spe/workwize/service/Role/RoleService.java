@@ -1,4 +1,4 @@
-package com.spe.workwize.service;
+package com.spe.workwize.service.Role;
 
 import com.spe.workwize.models.Role;
 
