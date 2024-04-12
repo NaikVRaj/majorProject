@@ -28,7 +28,6 @@ public class ApplicationConfig {
             return user;
         };
     }
-
     @Bean
     public AuthenticationProvider authenticationProvider(){
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();

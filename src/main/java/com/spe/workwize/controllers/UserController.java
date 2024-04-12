@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.*;
+import io.swagger.annotations.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,9 +22,10 @@ import java.util.Map;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/users")
+@Api(tags = "Demo", description = "Demo APIs")
 public class UserController {
 
-    private static final Logger logger = LogManager.getLogger("jairu");
+    private static final Logger logger = LogManager.getLogger("WorkWize");
 
     @Autowired
     private JwtService jwtService;
@@ -31,6 +33,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/authenticate")
+    @ApiOperation("Authenticating Users")
     public ResponseEntity<?> generateToken(@RequestBody Map<String,String> payload) throws AuthenticationException {
         try {
             User user = userService.generateToken(payload);
