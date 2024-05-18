@@ -1,6 +1,6 @@
-package com.spe.workwize.service.Role;
+package com.spe.workwize.service.role;
 
-import com.spe.workwize.models.Role;
+import com.spe.workwize.bean.Role;
 
 public interface RoleService {
     Role findByName(String name);

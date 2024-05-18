@@ -1,7 +1,7 @@
-package com.spe.workwize.controllers;
+package com.spe.workwize.controller;
 
 import com.spe.workwize.customModel.UserModel;
-import com.spe.workwize.service.Admin.AdminService;
+import com.spe.workwize.service.admin.AdminService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +16,12 @@ import java.util.Map;
 @RequestMapping("/admin")
 public class AdminController {
 
-    private static final Logger logger = LogManager.getLogger("jairu");
+    private static final Logger logger = LogManager.getLogger("workwize");
 
     private final AdminService adminService;
 
     @Autowired
-    public AdminController (AdminService adminService) {
+    public AdminController(AdminService adminService) {
         this.adminService = adminService;
     }
 

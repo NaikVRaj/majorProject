@@ -1,10 +1,11 @@
-package com.spe.workwize.controllers;
+package com.spe.workwize.controller;
 
+import com.spe.workwize.bean.Role;
+import com.spe.workwize.bean.User;
 import com.spe.workwize.config.JwtService;
 import com.spe.workwize.customModel.AuthToken;
 import com.spe.workwize.customModel.UserModel;
-import com.spe.workwize.models.User;
-import com.spe.workwize.service.User.UserService;
+import com.spe.workwize.service.user.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.*;
-import io.swagger.annotations.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,27 +22,30 @@ import java.util.Map;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/users")
-@Api(tags = "Demo", description = "Demo APIs")
 public class UserController {
 
-    private static final Logger logger = LogManager.getLogger("WorkWize");
+    private static final Logger logger = LogManager.getLogger("workwize");
+
+    private final JwtService jwtService;
+    private final UserService userService;
+
 
     @Autowired
-    private JwtService jwtService;
-    @Autowired
-    private UserService userService;
+    public UserController(JwtService jwtService, UserService userService) {
+        this.jwtService = jwtService;
+        this.userService = userService;
+    }
 
     @PostMapping("/authenticate")
-    @ApiOperation("Authenticating Users")
     public ResponseEntity<?> generateToken(@RequestBody Map<String,String> payload) throws AuthenticationException {
         try {
             User user = userService.generateToken(payload);
             User userDetails = new User();
             userDetails.setUsername(user.getUsername());
             List<String> rolesList= new ArrayList<>();
-            user.getRoles().forEach(role->{
+            for (Role role : user.getRoles()) {
                 rolesList.add(role.getName());
-            });
+            }
             final String token = jwtService.generateToken(userDetails, rolesList);
             logger.info("[UserController] - [Generate Token]");
             return ResponseEntity.ok(new AuthToken(token));
@@ -117,3 +120,4 @@ public class UserController {
         }
     }
 }
+

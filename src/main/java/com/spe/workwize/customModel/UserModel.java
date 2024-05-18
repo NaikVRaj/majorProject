@@ -1,6 +1,6 @@
 package com.spe.workwize.customModel;
 
-import com.spe.workwize.models.Role;
+import com.spe.workwize.bean.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

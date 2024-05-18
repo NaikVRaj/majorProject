@@ -1,8 +1,7 @@
-package com.spe.workwize.service.User;
+package com.spe.workwize.service.user;
 
-
+import com.spe.workwize.bean.User;
 import com.spe.workwize.customModel.UserModel;
-import com.spe.workwize.models.User;
 
 import java.util.List;
 import java.util.Map;

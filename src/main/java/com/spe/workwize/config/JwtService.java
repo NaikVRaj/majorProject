@@ -1,6 +1,5 @@
 package com.spe.workwize.config;
 
-
 import com.spe.workwize.utils.Constant;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -46,8 +45,7 @@ public class JwtService {
     }
 
     private boolean isTokenExpired(String token) {
-        Date d = extractExpiration(token);
-
+//        Date d = extractExpiration(token);
         return extractExpiration(token).before(new Date());
     }
 

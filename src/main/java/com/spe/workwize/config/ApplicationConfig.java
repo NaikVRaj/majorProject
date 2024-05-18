@@ -1,6 +1,6 @@
 package com.spe.workwize.config;
 
-import com.spe.workwize.models.User;
+import com.spe.workwize.bean.User;
 import com.spe.workwize.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -28,6 +28,7 @@ public class ApplicationConfig {
             return user;
         };
     }
+
     @Bean
     public AuthenticationProvider authenticationProvider(){
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();

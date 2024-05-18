@@ -1,6 +1,6 @@
-package com.spe.workwize.service.Role;
+package com.spe.workwize.service.role;
 
-import com.spe.workwize.models.Role;
+import com.spe.workwize.bean.Role;
 import com.spe.workwize.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,13 +8,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class RoleServiceImpl implements RoleService {
 
+    private final RoleRepository roleRepository;
+
     @Autowired
-    private RoleRepository roleRepository;
+    public RoleServiceImpl(RoleRepository roleRepository) {
+        this.roleRepository = roleRepository;
+    }
 
     @Override
     public Role findByName(String name) {
-        Role role = roleRepository.findRoleByName(name);
-        return role;
+        return roleRepository.findRoleByName(name);
     }
 
 }

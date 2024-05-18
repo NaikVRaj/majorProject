@@ -1,8 +1,7 @@
-package com.spe.workwize.service.Admin;
+package com.spe.workwize.service.admin;
 
 import com.spe.workwize.customModel.UserModel;
 import com.spe.workwize.repository.UserRepository;
-import com.spe.workwize.service.Role.RoleService;
 import com.spe.workwize.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,9 +13,7 @@ import java.util.Map;
 
 @Service(value = "adminService")
 public class AdminServiceImpl implements AdminService {
-
     private final UserRepository userRepository;
-
 
     @Autowired
     public AdminServiceImpl(UserRepository userRepository) {

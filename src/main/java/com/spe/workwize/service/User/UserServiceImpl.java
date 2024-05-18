@@ -1,11 +1,11 @@
-package com.spe.workwize.service.User;
+package com.spe.workwize.service.user;
 
+import com.spe.workwize.bean.Role;
+import com.spe.workwize.bean.User;
 import com.spe.workwize.customModel.LoginUser;
 import com.spe.workwize.customModel.UserModel;
-import com.spe.workwize.models.Role;
-import com.spe.workwize.models.User;
 import com.spe.workwize.repository.UserRepository;
-import com.spe.workwize.service.Role.RoleService;
+import com.spe.workwize.service.role.RoleService;
 import com.spe.workwize.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,12 +16,16 @@ import java.util.*;
 
 @Service
 public class UserServiceImpl implements UserService {
+    private final AuthenticationManager authenticationManager;
+    private final UserRepository userRepository;
+    private final RoleService roleService;
+
     @Autowired
-    private AuthenticationManager authenticationManager;
-    @Autowired
-    private UserRepository userRepository;
-    @Autowired
-    private RoleService roleService;
+    public UserServiceImpl(AuthenticationManager authenticationManager, UserRepository userRepository, RoleService roleService) {
+        this.authenticationManager = authenticationManager;
+        this.userRepository = userRepository;
+        this.roleService = roleService;
+    }
 
     @Override
     public User generateToken(Map<String, String> payload) {
