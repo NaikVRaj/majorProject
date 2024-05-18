@@ -70,7 +70,7 @@ The project "WorkWize" aims to address these challenges by developing a comprehe
 ## Tool Stack
 
 ### Front End:
-- React JS
+- Angular JS
 
 ### Back End:
 - Framework:
