@@ -88,10 +88,15 @@ The project "WorkWize" aims to address these challenges by developing a comprehe
 ---
 
 ### Created by:
-Vraj Jatin Naik & Arjun Gangani
-MT2023050 & MT2023153
-[Vraj.Naik@iiitb.ac.in](mailto:Vraj.Naik@iiitb.ac.in) & [Arjun.Gangani@iiitb.ac.in](mailto:Arjun.Gangani@iiitb.ac.in)
+- MT2023153 - Arjun Gangani [Arjun.Gangani@iiitb.ac.in](mailto:Arjun.Gangani@iiitb.ac.in)
+- MT2023050 - Vraj Naik [Vraj.Naik@iiitb.ac.in](mailto:Vraj.Naik@iiitb.ac.in)
 
+### Guided by:
+
+- Prof. B. Thangaraju [B.Thangaraju@iiitb.ac.in](mailto:B.Thangaraju@iiitb.ac.in)
+
+### Assisted by:
+- MT2019075 - Samaksh Dingra [Samaksh.Dhingra@iiitb.ac.in](mailto:Samakash.Dhingra@iiitb.ac.in)
 ---
 
 
