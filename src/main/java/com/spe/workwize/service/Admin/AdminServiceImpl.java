@@ -1,4 +1,4 @@
-package com.spe.workwize.service.admin;
+package com.spe.workwize.service.Admin;
 
 import com.spe.workwize.customModel.UserModel;
 import com.spe.workwize.repository.UserRepository;

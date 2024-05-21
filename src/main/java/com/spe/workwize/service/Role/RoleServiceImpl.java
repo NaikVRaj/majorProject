@@ -1,4 +1,4 @@
-package com.spe.workwize.service.role;
+package com.spe.workwize.service.Role;
 
 import com.spe.workwize.bean.Role;
 import com.spe.workwize.repository.RoleRepository;
