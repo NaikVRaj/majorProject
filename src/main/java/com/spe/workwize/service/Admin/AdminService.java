@@ -1,6 +1,6 @@
 package com.spe.workwize.service.Admin;
 
-import com.spe.workwize.customModel.UserModel;
+import com.spe.workwize.DTO.UserModel;
 
 import java.util.List;
 import java.util.Map;

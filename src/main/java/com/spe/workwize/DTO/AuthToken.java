@@ -1,4 +1,4 @@
-package com.spe.workwize.customModel;
+package com.spe.workwize.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

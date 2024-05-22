@@ -2,8 +2,8 @@ package com.spe.workwize.controller;
 
 import com.spe.workwize.bean.Project;
 import com.spe.workwize.bean.Task;
-import com.spe.workwize.customModel.ProjectModel;
-import com.spe.workwize.customModel.TaskModel;
+import com.spe.workwize.DTO.ProjectModel;
+import com.spe.workwize.DTO.TaskModel;
 import com.spe.workwize.service.Employee.EmployeeService;
 import com.spe.workwize.utils.Constant;
 import org.apache.logging.log4j.LogManager;

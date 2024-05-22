@@ -2,8 +2,8 @@ package com.spe.workwize.service.User;
 
 import com.spe.workwize.bean.Role;
 import com.spe.workwize.bean.User;
-import com.spe.workwize.customModel.LoginUser;
-import com.spe.workwize.customModel.UserModel;
+import com.spe.workwize.DTO.LoginUser;
+import com.spe.workwize.DTO.UserModel;
 import com.spe.workwize.repository.UserRepository;
 import com.spe.workwize.service.Role.RoleService;
 import com.spe.workwize.utils.Constant;

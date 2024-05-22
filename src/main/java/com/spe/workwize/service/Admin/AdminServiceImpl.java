@@ -1,6 +1,6 @@
 package com.spe.workwize.service.Admin;
 
-import com.spe.workwize.customModel.UserModel;
+import com.spe.workwize.DTO.UserModel;
 import com.spe.workwize.repository.UserRepository;
 import com.spe.workwize.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;

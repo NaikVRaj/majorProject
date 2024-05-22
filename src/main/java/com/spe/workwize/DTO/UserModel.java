@@ -1,4 +1,4 @@
-package com.spe.workwize.customModel;
+package com.spe.workwize.DTO;
 
 import com.spe.workwize.bean.Role;
 import lombok.AllArgsConstructor;

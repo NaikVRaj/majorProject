@@ -1,7 +1,7 @@
 package com.spe.workwize.service.manager;
 
 import com.spe.workwize.bean.*;
-import com.spe.workwize.customModel.UserModel;
+import com.spe.workwize.DTO.UserModel;
 import com.spe.workwize.repository.*;
 import com.spe.workwize.service.user.UserService;
 import com.spe.workwize.utils.Constant;

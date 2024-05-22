@@ -1,8 +1,8 @@
 package com.spe.workwize.controller;
 
 import com.spe.workwize.bean.Project;
-import com.spe.workwize.customModel.ProjectModel;
-import com.spe.workwize.customModel.UserModel;
+import com.spe.workwize.DTO.ProjectModel;
+import com.spe.workwize.DTO.UserModel;
 import com.spe.workwize.service.manager.ManagerService;
 import com.spe.workwize.utils.Constant;
 import org.apache.logging.log4j.LogManager;

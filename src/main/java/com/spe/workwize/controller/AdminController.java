@@ -1,6 +1,6 @@
 package com.spe.workwize.controller;
 
-import com.spe.workwize.customModel.UserModel;
+import com.spe.workwize.DTO.UserModel;
 import com.spe.workwize.service.Admin.AdminService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
