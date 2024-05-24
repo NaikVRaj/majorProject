@@ -102,6 +102,11 @@ The project "WorkWize" aims to address these challenges by developing a comprehe
 
 ---
 
+### [Application User Interface](Images/Application%20UI)
+
+
+---
+
 ### Created by:
 - MT2023153 - Arjun Gangani [Arjun.Gangani@iiitb.ac.in](mailto:Arjun.Gangani@iiitb.ac.in)
 - MT2023050 - Vraj Naik [Vraj.Naik@iiitb.ac.in](mailto:Vraj.Naik@iiitb.ac.in)
