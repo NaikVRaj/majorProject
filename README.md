@@ -1,5 +1,7 @@
 # WorkWize - Industrial Project Management Platform
 
+## Back End
+### [Front End Repository](https://github.com/ARJUN1220/SPE_frontend)
 ## Table of Contents
 
 1. [Problem Statement](#problem-statement)
@@ -64,6 +66,19 @@ The project "WorkWize" aims to address these challenges by developing a comprehe
        - Handle system configurations
        - Perform maintenance tasks
        - Address technical issues and escalations
+
+---
+
+## Diagrams
+
+### Use Case Diagram
+![Use Case Diagram](Images/Diagrams/UseCaseDiagram.png)
+
+### DB Design
+![DB Design](Images/Diagrams/DBDesignWithMapping.jpg)
+
+### API Documentation
+![API Documentation](Images/Diagrams/API.png)
 
 ---
 
