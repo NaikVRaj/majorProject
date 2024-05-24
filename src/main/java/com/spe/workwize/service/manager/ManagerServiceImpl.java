@@ -3,7 +3,7 @@ package com.spe.workwize.service.manager;
 import com.spe.workwize.bean.*;
 import com.spe.workwize.DTO.UserModel;
 import com.spe.workwize.repository.*;
-import com.spe.workwize.service.user.UserService;
+import com.spe.workwize.service.User.UserService;
 import com.spe.workwize.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

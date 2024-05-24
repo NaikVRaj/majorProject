@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 @Service
-public class UserServiceImpl implements com.spe.workwize.service.user.UserService {
+public class UserServiceImpl implements com.spe.workwize.service.User.UserService {
     private final AuthenticationManager authenticationManager;
     private final UserRepository userRepository;
     private final RoleService roleService;

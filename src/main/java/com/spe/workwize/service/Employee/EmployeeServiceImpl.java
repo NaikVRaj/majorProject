@@ -7,7 +7,7 @@ import com.spe.workwize.bean.User;
 import com.spe.workwize.repository.ProjectRepository;
 import com.spe.workwize.repository.TaskRepository;
 import com.spe.workwize.repository.TaskStatusLuRepository;
-import com.spe.workwize.service.user.UserService;
+import com.spe.workwize.service.User.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

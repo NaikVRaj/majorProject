@@ -1,4 +1,4 @@
-package com.spe.workwize.service.user;
+package com.spe.workwize.service.User;
 
 import com.spe.workwize.bean.User;
 import com.spe.workwize.DTO.UserModel;

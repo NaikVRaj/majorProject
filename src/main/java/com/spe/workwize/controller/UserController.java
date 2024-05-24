@@ -5,7 +5,7 @@ import com.spe.workwize.bean.User;
 import com.spe.workwize.config.JwtService;
 import com.spe.workwize.DTO.AuthToken;
 import com.spe.workwize.DTO.UserModel;
-import com.spe.workwize.service.user.UserService;
+import com.spe.workwize.service.User.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
